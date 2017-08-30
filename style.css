@@ -1,0 +1,39 @@
+html, body {
+    height: 100%;
+    min-height: 100%;
+    margin: 0;
+    border: 0;
+    color: #DDD;
+    background-color: #222;
+    font-family: "Trebuchet MS",Arial,Helvetica,sans-serif;
+}
+
+#main-table {
+    height: 100%;
+    width:  100%;
+    position: absolute; 
+    top: 0; 
+    bottom: 0; 
+    left: 0; 
+    right: 0;
+}
+#table-head {
+    height: 10%;
+}
+#table-foot {
+    height: 5%;
+}
+#menu-cell {
+}
+#chart-cell {
+    width: 80%;
+    /*border: 2px solid red;*/
+}
+.container {
+    height: 100%;
+    width: 100%;
+}
+#chart {
+    height: 100%;
+    width: 100%;
+}

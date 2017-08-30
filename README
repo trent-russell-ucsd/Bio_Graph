@@ -1,0 +1,42 @@
+Ok Trent, here is the data challenge!
+
+Capellabio data challenge
+
+The purpose is to develop a small web-application in order to demonstrate your
+development skills.  This will give us an idea of what you can do in a 
+relatively short period of time.  You may use any software technology you like.
+
+Also, feel free to ask me questions about this (email, text, or phone call) as
+I understand that the dataset may be difficult to interpret and the 
+instructions may be a little vague.
+
+ 
+
+    
+Provided to you is the data for a public-domain breast cancer dataset 
+(NCBI GEO ID:  GSE30682).  You can find out a little background on this by 
+searching for it at the NCBI GEO website (GEO stands for ‘Gene Expression Omnibus’).  The dataset consists of two files:  1) the gene expression, and 2) the metadata.  
+
+    Create some way to store both the expression data and associated meta-data.
+
+    Develop a user-interface. We should be able to access the user-interface from our office.  At a minimum, the user-interface should be able to:
+
+        Enable the user to select a gene of interest.
+
+        Enable the user to make several choices of metadata from this list, e.g. age for example.
+
+        Create some kind of visualization to show the user the value of the expression for a particular gene in addition to the selected metadata item across samples. 
+
+    Be prepared to explain your choice of software technologies and interface design, e.g. what was the rationale, and more importantly what technologies do you think we would need to implement our vision?
+
+ 
+
+Also, If you have a project or portfolio that you have personally developed that we can access, this could be useful to us as well, especially if the technologies used in this case demonstrate a way of doing things which is different from the web application you have developed here.  This purpose in this case is to provide more discussion points regarding technologies, their appropriate uses, etc.
+
+ 
+
+Best of luck, and thank you very much for attempting this challenge!
+
+Regards,
+Brent
+PS - I've had trouble sending *.gz files in the past.  If there's issues here then we'll figure out another way to send.

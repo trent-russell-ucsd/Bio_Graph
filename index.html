@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <script src="script.js"></script> 
+        <!--<script class="include" type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>	-->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> 	
+        <script src="http://evanplaice.github.io/jquery-csv/src/jquery.csv.js"></script> 	
+    </head>
+    <body>
+
+
+        <!-- Main table -->
+        <table id='main-table'>
+            <tr id='row'>
+	        <td id='table-head' colspan="2"><h1>NCBI GEO: Gene Expression Omnibus</h1></td>
+	    </tr>
+	    <tr>
+	        <td id='menu-cell'>
+		    <div>
+		        <div>Age</div>
+			<div>Sex</div>
+			<div></div>
+		    </div>
+		</td>
+		<td id='chart-cell'>
+		    <div class="container"><div id='chart'></div></div>
+	        </td>
+	    </tr>
+	    <tr id='row'><td id='table-foot' colspan="2">FOOTER</td></tr>
+	</table>
+        <!--<div id="chart"></div>-->
+        <!-- END Main table-->
+
+    <script class="code" type="text/javascript">
+
+    $(document).ready(function () {
+        Test_DB();
+        Render_Graph();
+    });
+
+
+    function Test_DB(){
+        var url = window.location.href+"controller.php";
+        //alert(url);
+        console.log("TESTING HRHHRHRHEE");
+        $.ajax({
+            url: url,
+            method: 'POST',
+            data: {'test': 'test'},
+            success: function(str) {
+	        console.log("RETURNED: "+str);
+            }
+        });
+    }
+
+    </script>
+
+    <script class="include" type="text/javascript" src="jquery.jqplot.min.js"></script>
+    <script type="text/javascript" src="examples/syntaxhighlighter/scripts/shCore.min.js"></script>
+    <script type="text/javascript" src="examples/syntaxhighlighter/scripts/shBrushJScript.min.js"></script>
+    <script type="text/javascript" src="examples/syntaxhighlighter/scripts/shBrushXml.min.js"></script>
+
+    <script class="include" type="text/javascript" src="plugins/jqplot.dateAxisRenderer.min.js"></script>
+    <script class="include" type="text/javascript" src="plugins/jqplot.logAxisRenderer.min.js"></script>
+    <script class="include" type="text/javascript" src="plugins/jqplot.canvasTextRenderer.min.js"></script>
+    <script class="include" type="text/javascript" src="plugins/jqplot.canvasAxisTickRenderer.min.js"></script>
+    <script class="include" type="text/javascript" src="plugins/jqplot.highlighter.min.js"></script>
+    <script class="include" language="javascript" type="text/javascript" src="plugins/jqplot.barRenderer.min.js"></script>
+    <script class="include" language="javascript" type="text/javascript" src="plugins/jqplot.categoryAxisRenderer.min.js"></script>
+    <script class="include" language="javascript" type="text/javascript" src="plugins/jqplot.pointLabels.min.js"></script>
+	
+    </body>
+</html>
